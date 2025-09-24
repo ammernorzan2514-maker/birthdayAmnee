@@ -1,0 +1,232 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('bgmain.jpeg');
+
+
+}
+
+header {
+    text-align: center;
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.png');
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+
+
+}
+
+#memecat {
+    width: 300px;
+    height: auto;
+    align-items: end;
+
+}
+
+.text {
+
+    top: 20px;
+
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 50px;
+    margin-top: 100px;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-family: 'Luckiest Guy';
+}
+
+.text1 {
+
+    top: 20px;
+
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 50px;
+    margin-top: 20px;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-family: 'Luckiest Guy';
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#startBttn {
+
+    padding: 15px 40px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ee4bad;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+#startBttn:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#startBttn:active {
+    transform: scale(0.9);
+}
+
+#mainPage {
+    display: none;
+    padding: 40px;
+}
+
+#tajuk {
+    color: whitesmoke;
+    font-family: 'Luckiest Guy';
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.ballon1 {
+    background-image: url('balloon.png');
+    background-size: contain;
+    /* fit the balloon */
+    background-repeat: no-repeat;
+    width: 75px;
+    /* smaller width */
+    height: 200px;
+    /* smaller height */
+    position: absolute;
+    right: 20px;
+    /* horizontal position from right */
+    bottom: 0;
+    /* start from bottom */
+    animation: rise 3s forwards;
+    /* move once and stay */
+
+}
+
+.ballon2 {
+    background-image: url('balloon.png');
+    background-size: contain;
+    /* fit the balloon */
+    background-repeat: no-repeat;
+    width: 75px;
+    /* smaller width */
+    height: 200px;
+    /* smaller height */
+    position: absolute;
+    left: 20px;
+    /* horizontal position from right */
+    bottom: 0;
+    /* start from bottom */
+    animation: rise 3s forwards;
+    /* move once and stay */
+
+}
+
+.cake {
+    background-image: url('cake.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 175px;
+    margin-top: 40px;
+    position: absolute;
+    left: 30px;
+
+    border-radius: 30px;
+    box-shadow: 0 0 121px rgba(255, 0, 183, 0.4);
+}
+
+.flower {
+    background-image: url('flower.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 175px;
+    margin-top: 40px;
+    position: absolute;
+    right: 30px;
+    filter: brightness(85%);
+
+    border-radius: 30px;
+    box-shadow: 0 0 121px rgba(255, 0, 183, 0.4);
+}
+
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rise {
+    0% {
+        bottom: 0;
+        /* start at bottom */
+    }
+
+    100% {
+        bottom: 625px;
+        /* final position from bottom, adjust if needed */
+    }
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* latar gelap */
+    display: none;
+    /* mula-mula sembunyi */
+    align-items: center;
+    /* tengah secara menegak */
+    justify-content: center;
+    /* tengah secara mendatar */
+    z-index: 9999;
+}
+
+/* gaya iframe di dalam overlay */
+#overlay iframe {
+    width: 80%;
+    /* saiz macam biasa */
+    height: 400px;
+    /* tinggi macam biasa */
+    border: 2px solid #333;
+    background: #fff;
+    /* putih supaya tak nampak overlay belakang */
+}

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+    background-image: url('bgpage2.jpeg');
+    background-size: cover;
+        /* gambar penuh skrin */
+        background-repeat: no-repeat;
+        /* tak ulang */
+        background-position: center;
+        /* centerkan gambar */
+        background-attachment: fixed;
+        /* ikut scroll */
+}
+
+h2 {
+    color: #c12ea4ad;
+    font-family: 'Dancing Script';
+    font-weight: bolder;
+    animation: fadeIn 1s ease-in-out forwards;
+    
+}
+
+p {
+    color: rgb(137, 126, 126);
+    font-size: 15px;
+    white-space: pre-wrap;
+    text-shadow: 0 0 1px #fff;
+    
+    font-family: "Courgette", cursive;
+    font-weight: 1000;
+        
+        font-style: normal;
+    
+    text-align: start;
+    animation: fadeIn 2s ease-in-out forwards;
+    /* optional, text rata kiri */
+}
+
+button {
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
