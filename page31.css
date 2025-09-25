@@ -60,11 +60,37 @@ bottom: -2800px;
 
 .polaroid {
     width: 400px;
-    /* saiz div kecil */
     height: 400px;
     object-fit: cover;
-    /* maintain ratio tapi crop sikit */
-   
+    animation: fadeIn 1.5s ease forwards;
+    /* animasi masuk perlahan */
+    transition: transform 0.5s ease;
+}
+.polaroid:hover {
+    transform: rotate(-3deg) scale(1.05);
+    animation: swing 1s ease-in-out infinite alternate;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* keyframes swing */
+@keyframes swing {
+    0% {
+        transform: rotate(-3deg) scale(1.05);
+    }
+
+    100% {
+        transform: rotate(3deg) scale(1.05);
+    }
 }
 .bg {
     position: fixed;
