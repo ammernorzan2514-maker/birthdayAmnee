@@ -111,43 +111,30 @@ header {
     margin-top: 70px;
 }
 
-.ballon1 {
-    background-image: url('balloon.png');
-    background-size: contain;
-    /* fit the balloon */
-    background-repeat: no-repeat;
-    width: 75px;
-    /* smaller width */
-    height: 200px;
-    /* smaller height */
-    position: absolute;
-    right: 20px;
-    /* horizontal position from right */
-    bottom: 0;
-    /* start from bottom */
-    animation: rise 3s forwards;
-    /* move once and stay */
-
-}
-
+.ballon1,
 .ballon2 {
     background-image: url('balloon.png');
     background-size: contain;
-    /* fit the balloon */
     background-repeat: no-repeat;
-    width: 75px;
-    /* smaller width */
-    height: 200px;
-    /* smaller height */
+    width: 15vw;
+    /* lebar ikut % skrin */
+    height: 30vh;
+    /* tinggi ikut % skrin */
     position: absolute;
-    left: 20px;
-    /* horizontal position from right */
     bottom: 0;
-    /* start from bottom */
     animation: rise 3s forwards;
-    /* move once and stay */
-
 }
+
+.ballon1 {
+    right: 5vw;
+}
+
+/* jarak dari kanan ikut % */
+.ballon2 {
+    left: 5vw;
+}
+
+/* jarak dari kiri ikut % */
 
 .cake {
     background-image: url('cake.png');
@@ -193,12 +180,10 @@ header {
 @keyframes rise {
     0% {
         bottom: 0;
-        /* start at bottom */
     }
 
     100% {
-        bottom: 625px;
-        /* final position from bottom, adjust if needed */
+        bottom: 60vh;
     }
 }
 
@@ -230,16 +215,19 @@ header {
     border-radius: 25px;
     /* putih supaya tak nampak overlay belakang */
 }
-.present{
+.present {
     background-image: url('hadiah.png');
     background-size: contain;
-        background-repeat: no-repeat;
-        width: 150px;
-        height: 175px;
-        margin-top: 40px;
-        position: absolute;
-        bottom: 150px;
-        left: 125px;
-        border-radius: 30px;
-            box-shadow: 0 0 121px rgba(255, 0, 183, 0.4);
+    background-repeat: no-repeat;
+    width: 20vw;
+    /* lebar ikut % skrin */
+    height: 20vh;
+    /* tinggi ikut % skrin */
+    position: absolute;
+    bottom: 15vh;
+    /* naik sikit ikut % tinggi skrin */
+    left: 10vw;
+    /* jarak kiri ikut % skrin */
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(255, 0, 183, 0.4);
 }
