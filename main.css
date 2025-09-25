@@ -219,14 +219,14 @@ header {
     background-image: url('hadiah.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 20vw;
+    width: 40vw;
     /* lebar ikut % skrin */
     height: 20vh;
     /* tinggi ikut % skrin */
     position: absolute;
     bottom: 15vh;
     /* naik sikit ikut % tinggi skrin */
-    left: 10vw;
+    left: 30vw;
     /* jarak kiri ikut % skrin */
     border-radius: 30px;
     box-shadow: 0 0 30px rgba(255, 0, 183, 0.4);
