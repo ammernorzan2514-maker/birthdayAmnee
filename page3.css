@@ -1,0 +1,80 @@
+body {
+    font-family: 'Luckiest Guy';
+    text-align: center;
+    padding: 50px;
+    background-image: url('bgpage3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-position: center;
+        
+        background-attachment: fixed;
+}
+
+h2 {
+    color: #f0f9ff;
+    font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+p {
+    font-size: 18px;
+}
+.memoryBtn{
+    padding: 5px 10px;
+        /* kurang dari 15px 40px */
+        font-size: 18px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+        /* kurang dari 30px */
+        font-style: italic;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(45deg, #ee4bad, #ff6ec7);
+        border: none;
+        border-radius: 10px;
+        /* boleh kecilkan sikit ikut size */
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+       
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.memoryBtn:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #ff6ec7, #ee4bad);
+}
+
+.memoryBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.backBtn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ffb6c1, #ff99aa);
+    /* light pink gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effect */
+.backBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(45deg, #ff99aa, #ffb6c1);
+    /* reverse light pink */
+}
+
+/* Active effect bila ditekan */
+.backBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}

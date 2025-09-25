@@ -2,7 +2,8 @@ const startBttn = document.getElementById('startBttn');
 const start = document.getElementById('start');
 const mainPage = document.getElementById('mainPage');
 
-
+/*start.style.display = 'none';
+mainPage.style.display = 'block';*/
 startBttn.addEventListener('click', () => {
   // sembunyikan start screen
   start.style.display = 'none';

@@ -1,0 +1,82 @@
+body{
+    background-image: url('bgpage3.1.jpeg');
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+        background-attachment: fixed;
+        scrollbar-width: none;
+            /* hide scrollbar */
+            -ms-overflow-style: none;
+            /* hide scrollbar IE 10+ */
+}
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.backBtn {
+   position: absolute;
+bottom: -2800px;
+   left: 80px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ffb6c1, #ff99aa);
+    /* light pink gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+/* Hover effect */
+.backBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(45deg, #ff99aa, #ffb6c1);
+    /* reverse light pink */
+}
+
+/* Active effect bila ditekan */
+.backBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.gmbr-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* responsive, gambar turun bila ruang kurang */
+    justify-content: space-between;
+    /* kiri dan kanan ada space */
+    max-width: 650px;
+    /* lebar container */
+    margin: 50px auto;
+    /* center container */
+    gap: 5px;
+    /* jarak antara gambar */
+}
+
+.gmbr-container div {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.polaroid {
+    width: 400px;
+    /* saiz div kecil */
+    height: 400px;
+    object-fit: cover;
+    /* maintain ratio tapi crop sikit */
+   
+}
